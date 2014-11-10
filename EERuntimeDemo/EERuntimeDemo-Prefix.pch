@@ -1,15 +1,14 @@
 //
-//  ViewController.h
+//  EERuntimeDemo.pch
 //  EERuntimeDemo
 //
 //  Created by 卓哥的世界你不懂 on 14/11/10.
 //  Copyright (c) 2014年 李卓. All rights reserved.
 //
 
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UITableViewController
-
-
-@end
-
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import <objc/runtime.h>
+#endif

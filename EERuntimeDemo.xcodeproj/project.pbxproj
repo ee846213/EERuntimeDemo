@@ -14,6 +14,8 @@
 		FCF6C6A81A106B130008C2CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF6C6A71A106B130008C2CE /* Images.xcassets */; };
 		FCF6C6AB1A106B130008C2CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF6C6A91A106B130008C2CE /* LaunchScreen.xib */; };
 		FCF6C6B71A106B130008C2CE /* EERuntimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6C6B61A106B130008C2CE /* EERuntimeDemoTests.m */; };
+		FCF6C6C61A1089700008C2CE /* AssociatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6C6C41A1089700008C2CE /* AssociatedViewController.m */; };
+		FCF6C6C71A1089700008C2CE /* AssociatedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF6C6C51A1089700008C2CE /* AssociatedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		FCF6C6B01A106B130008C2CE /* EERuntimeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EERuntimeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF6C6B51A106B130008C2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCF6C6B61A106B130008C2CE /* EERuntimeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EERuntimeDemoTests.m; sourceTree = "<group>"; };
+		FCF6C6C31A1089700008C2CE /* AssociatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedViewController.h; sourceTree = "<group>"; };
+		FCF6C6C41A1089700008C2CE /* AssociatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociatedViewController.m; sourceTree = "<group>"; };
+		FCF6C6C51A1089700008C2CE /* AssociatedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssociatedViewController.xib; sourceTree = "<group>"; };
+		FCF6C6CB1A108B1E0008C2CE /* EERuntimeDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EERuntimeDemo-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,9 @@
 				FCF6C69F1A106B130008C2CE /* AppDelegate.m */,
 				FCF6C6A11A106B130008C2CE /* ViewController.h */,
 				FCF6C6A21A106B130008C2CE /* ViewController.m */,
+				FCF6C6C31A1089700008C2CE /* AssociatedViewController.h */,
+				FCF6C6C41A1089700008C2CE /* AssociatedViewController.m */,
+				FCF6C6C51A1089700008C2CE /* AssociatedViewController.xib */,
 				FCF6C6A41A106B130008C2CE /* Main.storyboard */,
 				FCF6C6A71A106B130008C2CE /* Images.xcassets */,
 				FCF6C6A91A106B130008C2CE /* LaunchScreen.xib */,
@@ -98,6 +107,7 @@
 			children = (
 				FCF6C69B1A106B130008C2CE /* Info.plist */,
 				FCF6C69C1A106B130008C2CE /* main.m */,
+				FCF6C6CB1A108B1E0008C2CE /* EERuntimeDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF6C6C71A1089700008C2CE /* AssociatedViewController.xib in Resources */,
 				FCF6C6A61A106B130008C2CE /* Main.storyboard in Resources */,
 				FCF6C6AB1A106B130008C2CE /* LaunchScreen.xib in Resources */,
 				FCF6C6A81A106B130008C2CE /* Images.xcassets in Resources */,
@@ -219,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF6C6C61A1089700008C2CE /* AssociatedViewController.m in Sources */,
 				FCF6C6A31A106B130008C2CE /* ViewController.m in Sources */,
 				FCF6C6A01A106B130008C2CE /* AppDelegate.m in Sources */,
 				FCF6C69D1A106B130008C2CE /* main.m in Sources */,
@@ -343,6 +355,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EERuntimeDemo/EERuntimeDemo-Prefix.pch";
 				INFOPLIST_FILE = EERuntimeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +367,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EERuntimeDemo/EERuntimeDemo-Prefix.pch";
 				INFOPLIST_FILE = EERuntimeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +428,7 @@
 				FCF6C6BC1A106B130008C2CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCF6C6BD1A106B130008C2CE /* Build configuration list for PBXNativeTarget "EERuntimeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +437,7 @@
 				FCF6C6BF1A106B130008C2CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

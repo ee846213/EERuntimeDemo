@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AssociatedViewController.h
 //  EERuntimeDemo
 //
 //  Created by 卓哥的世界你不懂 on 14/11/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
+@interface AssociatedViewController : UIViewController
 
 @end
-
